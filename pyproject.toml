@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "auto-ssh-setup"
+version = "1.0.0"
+description = "SSH toolkit for Claude Code agents and humans — one command to setup SSH access, GitHub keys, and server hardening."
+readme = "readme.md"
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = [
+    "paramiko>=3.0.0",
+]
+
+[project.scripts]
+auto-ssh-setup = "script:main"
+
+[project.urls]
+Repository = "https://github.com/zalupix/auto-ssh-setup"
